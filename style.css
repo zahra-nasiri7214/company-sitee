@@ -1,0 +1,114 @@
+/* فونت و رنگ اصلی */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background: linear-gradient(135deg, #f7f9fc, #e3f2fd);
+  color: #333;
+  line-height: 1.8;
+}
+
+/* هدر */
+.hero {
+  text-align: center;
+  padding: 2rem;
+  background: #0b84ff;
+  color: #fff;
+}
+
+.hero .profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  margin-bottom: 1rem;
+}
+
+.hero h1 {
+  margin: 0.5rem 0;
+}
+
+.hero .contact {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+/* بخش‌ها */
+section {
+  padding: 2rem 1rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+section h2 {
+  color: #0b84ff;
+  margin-bottom: 1rem;
+}
+
+/* مهارت‌ها */
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill {
+  background: #fff;
+  border: 2px solid #0b84ff;
+  color: #0b84ff;
+  padding: 8px 12px;
+  border-radius: 20px;
+  transition: all 0.3s;
+}
+
+.skill:hover {
+  background: #0b84ff;
+  color: #fff;
+}
+
+/* پروژه‌ها */
+.project-slider {
+  display: flex;
+  overflow-x: auto;
+  gap: 15px;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 10px;
+}
+
+.project {
+  min-width: 250px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  scroll-snap-align: start;
+}
+
+.project img {
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+}
+
+.project p {
+  padding: 0.5rem;
+}
+
+/* فوتر */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #0b84ff;
+  color: #fff;
+  margin-top: 2rem;
+}
+
+/* ریسپانسیو */
+@media (max-width: 600px) {
+  .hero .profile-img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .project {
+    min-width: 200px;
+  }
+}

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>رزومه زهرا نصیری</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      background: linear-gradient(135deg, #f7f9fc, #e3f2fd);
+      color: #333;
+      line-height: 1.8;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 2rem;
+      background: #0b84ff;
+      color: #fff;
+    }
+
+    .hero .profile-img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 4px solid #fff;
+      margin-bottom: 1rem;
+    }
+
+    section {
+      padding: 2rem 1rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    section h2 {
+      color: #0b84ff;
+      margin-bottom: 1rem;
+    }
+
+    .skill-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .skill {
+      background: #fff;
+      border: 2px solid #0b84ff;
+      color: #0b84ff;
+      padding: 8px 12px;
+      border-radius: 20px;
+      transition: all 0.3s;
+    }
+
+    .skill:hover {
+      background: #0b84ff;
+      color: #fff;
+    }
+
+    .project-slider {
+      display: flex;
+      overflow-x: auto;
+      gap: 15px;
+      scroll-snap-type: x mandatory;
+      padding-bottom: 10px;
+    }
+
+    .project {
+      min-width: 250px;
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      scroll-snap-align: start;
+    }
+
+    .project img {
+      width: 100%;
+      border-radius: 15px 15px 0 0;
+    }
+
+    .project p {
+      padding: 0.5rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #0b84ff;
+      color: #fff;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 600px) {
+      .hero .profile-img {
+        width: 100px;
+        height: 100px;
+      }
+
+      .project {
+        min-width: 200px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- هدر -->
+  <header class="hero">
+    <!-- عکس پروفایل به صورت Base64 (نمونه یک دایره خاکستری) -->
+    <img
+      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAACWCAMAAAAL34HQAAAAM1BMVEUAAAD///+hoaHu7u7k5OTf39/T09O8vLyzs7Pb29u/v7/ExMSRkZHb29vh4eHZ2dnd3d2Xl5f19fUzUZJ7AAAAD3RSTlMAzE4a7O3+/f/0jXcQplpMZXHyAAABxElEQVR4Ae3XUQ6DMAwEUGRo//9TXrIoNQmJaN5r+qg4Q94tdcvEc0+9UQAAAAAAAAAA4L1T0jqPzdMCShpTj2ldAuvQy5VkZVqV5bdPzV49yZd8eub/N7M4zO7u0vdrfbfZ3fK5NVdV+48H5rH85zV2S14a5r/rfquWfXucp0/zlVfG7nlr3vY7Xz7Zztl+Z5+5rvA/PFvTvvb9lzjvh7fOzu11aT29X23mvx+VwAAAAAAAAAAAP6AD+xvFs1HbVkAAAAASUVORK5CYII="
+      alt="زهرا نصیری" class="profile-img">
+    <h1>زهرا نصیری</h1>
+    <p>برنامه نویس | کارشناس مهندسی کامپیوتر</p>
+    <p class="contact">📧 zahra.nasiri7164@gmail.com | 📱 09182906037</p>
+  </header>
+
+  <!-- درباره من -->
+  <section class="about">
+    <h2>درباره من</h2>
+    <p>
+      من زهرا نصیری هستم، برنامه‌نویس و فارغ‌التحصیل مهندسی کامپیوتر.
+      علاقه‌مند به طراحی وب، توسعه نرم‌افزار و یادگیری تکنولوژی‌های جدید.
+    </p>
+  </section>
+
+  <!-- مهارت‌ها -->
+  <section class="skills">
+    <h2>مهارت‌ها</h2>
+    <div class="skill-list">
+      <div class="skill">HTML / CSS</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">React</div>
+      <div class="skill">Python</div>
+      <div class="skill">Git & GitHub</div>
+    </div>
+  </section>
+
+  <!-- پروژه‌ها -->
+  <section class="projects">
+    <h2>پروژه‌ها</h2>
+    <div class="project-slider">
+      <div class="project"><img src="https://via.placeholder.com/300x200.png?text=Project+1" alt="پروژه 1">
+        <p>فروشگاه آنلاین</p>
+      </div>
+      <div class="project"><img src="https://via.placeholder.com/300x200.png?text=Project+2" alt="پروژه 2">
+        <p>سیستم مدیریت کارها</p>
+      </div>
+      <div class="project"><img src="https://via.placeholder.com/300x200.png?text=Project+3" alt="پروژه 3">
+        <p>وبلاگ شخصی</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- فوتر -->
+  <footer>
+    <p>© 2025 زهرا نصیری | طراحی و توسعه توسط خودم 💻</p>
+  </footer>
+</body>
+
+</html>
